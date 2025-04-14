@@ -1,0 +1,63 @@
+@import url("https://css.gomuks.app/theme/yacm.css");
+@import url("https://css.gomuks.app/theme/bubblemuks.css");
+
+:root {
+  --font-stack: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --timeline-hover-bg-color: #121217;
+  --timeline-sender-name-content-gap: 4px;
+  --highlight-pill-background-color: #bb5e94;
+}
+
+.space-bar, .room-list-wrapper {
+  border-right: 1px solid var(--background-color);
+}
+
+div.room-list-wrapper {
+  grid-template:
+    "spacebar search" 3.5rem
+    "spacebar roomlist" 1fr / 0 1fr;
+}
+
+main, .room-view {
+  background: #0e0e12;
+}
+
+.room-list {
+  padding: 8px;
+  border-top: 1px solid var(--background-color);
+}
+
+div.room-entry {
+  border-radius: 8px;
+  padding: 6px 4px !important;
+  width: auto !important;
+  cursor: pointer;
+}
+
+.room-entry:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+div.room-entry {
+  & > div.room-entry-right {
+    >div.message-preview {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+div.timeline-event {
+  &.highlight {
+    background-color: unset;
+  }
+
+  &:hover:not(.no-hover), &.focused-event {
+    &.highlight {
+      background-color: var(--timeline-hover-bg-color);
+    }
+  }
+}
