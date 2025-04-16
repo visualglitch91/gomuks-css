@@ -61,3 +61,13 @@ div.timeline-event {
     }
   }
 }
+
+div.room-entry-unreads {
+    & > div.unread-count {
+        &.big {
+            --unread-count-size: 1rem;
+            font-size: 12px;
+            font-weight: normal;
+        }
+    }
+}
