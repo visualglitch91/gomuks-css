@@ -71,3 +71,16 @@ div.room-entry-unreads {
         }
     }
 }
+
+.timeline-event:not(.small-event) .event-content {
+  width: auto;
+}
+
+div.timeline-event > div.event-send-status {
+  max-height: unset;
+  margin-right: 4px;
+}
+
+div.timeline-event > div.read-receipts {
+  margin-right: 4px;
+}
