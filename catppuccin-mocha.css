@@ -75,7 +75,7 @@ div.room-entry-unreads {
 div.room-entry-unreads {
     & > div.unread-count {
         &.highlighted, &.notified {
-            background-color: var(--unread-counter-notification-bg);
+            background-color: #cba6f7;
         }
     }
 }
