@@ -72,6 +72,14 @@ div.room-entry-unreads {
     }
 }
 
+div.room-entry-unreads {
+    & > div.unread-count {
+        &.highlighted, &.notified {
+            background-color: var(--unread-counter-notification-bg);
+        }
+    }
+}
+
 .timeline-event:not(.small-event) .event-content {
   width: auto;
 }
